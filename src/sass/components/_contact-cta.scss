@@ -1,0 +1,21 @@
+@use '../abstracts/mixins' as mxn;
+
+.contact-cta {
+	--cta-gap: 4rem;
+	display: grid;
+	place-items: center;
+	gap: 4rem;
+	margin-block: clamp(8rem, 12.5vw, 9.6rem);
+	text-align: center;
+	@include mxn.mq(medium) {
+		grid-auto-flow: column;
+		grid-template-columns: auto 1fr auto;
+		text-align: start;
+	}
+
+	@include mxn.mq(medium) {
+		&__heading {
+			max-inline-size: 14ch;
+		}
+	}
+}

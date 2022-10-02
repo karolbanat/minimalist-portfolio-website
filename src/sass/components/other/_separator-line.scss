@@ -1,0 +1,13 @@
+@use '../../abstracts/mixins' as mxn;
+@use '../../abstracts/functions' as func;
+
+.separator-line {
+	$line-clr: func.get-color(primary, 700);
+	display: none;
+	height: 1px;
+	background-color: fade-out($line-clr, 0.85);
+	@include mxn.mq(medium) {
+		display: block;
+		width: 100%;
+	}
+}
