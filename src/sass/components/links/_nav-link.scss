@@ -1,0 +1,21 @@
+@use '../../abstracts/mixins' as mxn;
+
+.nav-link {
+	--nav-link-clr: var(--clr-neutral-100);
+	color: var(--nav-link-clr, black);
+	font-size: var(--fz-200);
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	line-height: 1.1;
+	cursor: pointer;
+	@include mxn.mq(medium) {
+		--nav-link-clr: var(--clr-neutral-700);
+	}
+
+	&:hover,
+	&:focus,
+	&.active {
+		--nav-link-clr: var(--clr-primary-400);
+	}
+}

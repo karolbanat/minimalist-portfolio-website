@@ -1,0 +1,12 @@
+@keyframes slide-nav {
+	from {
+		transform: translateY(-100%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+.animation-slide-nav {
+	animation: slide-nav 0.75s ease;
+}
