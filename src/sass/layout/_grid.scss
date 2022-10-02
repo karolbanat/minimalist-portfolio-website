@@ -1,0 +1,22 @@
+@use '../abstracts/mixins' as mxn;
+
+.primary-header-grid {
+	display: grid;
+	gap: 2.4rem;
+
+	&__image img {
+		margin-inline: auto;
+	}
+
+	@include mxn.mq(small) {
+		&__image,
+		&__content {
+			grid-column: 1 / 1;
+			grid-row: 1 / 1;
+		}
+
+		&__content {
+			place-self: end start;
+		}
+	}
+}

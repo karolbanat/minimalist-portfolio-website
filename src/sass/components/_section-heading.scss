@@ -1,0 +1,17 @@
+.section-heading {
+	&--primary {
+		font-size: var(--fz-800);
+		font-weight: var(--fw-700);
+		line-height: 1;
+	}
+	&--secondary {
+		font-size: var(--fz-700);
+		font-weight: var(--fw-700);
+		line-height: 1.05;
+	}
+	&--tertiary {
+		font-size: var(--fz-600);
+		font-weight: var(--fw-400);
+		line-height: 1.125;
+	}
+}
