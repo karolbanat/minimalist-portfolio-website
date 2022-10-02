@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./dist/images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans:wght@400;600;700&display=swap"
@@ -17,30 +17,110 @@
 
 <body>
 
-  Home
-  Portfolio
-  Contact Me
+  <div class="container">
+    <nav class="navigation">
+      <a aria-label="Home page" href="#"><img src="./dist/images/logo.svg" alt="" class="logo"></a>
+      <button aria-label="Toggle menu"
+              aria-controls="primary-nav"
+              aria-expanded="false"
+              class="toogle-button navigation__toggle-button">
+        <img src="./dist/images/icons/hamburger.svg" alt="" class="toggle-button__icon-open">
+        <img src="./dist/images/icons/close.svg" alt="" class="toggle-button__icon-close">
+      </button>
+      <div id="primary-nav" class="navigation__nav">
+        <ul class="navigation__nav-list">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="./html/portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="./html/contact.html" class="nav-link">Contact me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-  Hey, I’m Alex Spencer and I love building beautiful websites
+  <header class="primary-header">
+    <div class="container">
+      <div class="primary-header-grid">
+        <picture class="primary-header-grid__image">
+          <source media="(min-width: 992px)"
+                  srcset="./dist/images/homepage/desktop/image-homepage-hero.jpg 1x, ./dist/images/homepage/desktop/image-homepage-hero@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+                  srcset="./dist/images/homepage/tablet/image-homepage-hero.jpg 1x, ./dist/images/homepage/tablet/image-homepage-hero@2x.jpg 2x">
+          <source
+                  srcset="./dist/images/homepage/mobile/image-homepage-hero.jpg 1x, ./dist/images/homepage/mobile/image-homepage-hero@2x.jpg 2x">
+          <img src="./dist/images/homepage/mobile/image-homepage-hero.jpg"
+               alt="Apple computer with project preview">
+        </picture>
+        <div class="primary-header__content">
+          <h1 class="section-heading section-heading--primary">Hey, I’m Alex Spencer and I love building beautiful
+            websites</h1>
+          <a href="#about-me" class="button button--accent">About Me</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-  About Me
+  <main>
+    <div class="container">
+      <section id="about-me" class="flex">
+        <picture>
+          <source media="(min-width: 992px)"
+                  srcset="./dist/images/homepage/desktop/image-homepage-profile.jpg 1x, ./dist/images/homepage/desktop/image-homepage-profile@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+                  srcset="./dist/images/homepage/tablet/image-homepage-profile.jpg 1x, ./dist/images/homepage/tablet/image-homepage-profile@2x.jpg 2x">
+          <source
+                  srcset="./dist/images/homepage/mobile/image-homepage-profile.jpg 1x, ./dist/images/homepage/mobile/image-homepage-profile@2x.jpg 2x">
+          <img src="./dist/images/homepage/mobile/image-homepage-profile.jpg"
+               alt="Alex Spencer picture">
+        </picture>
+        <header class="content-border-body">
+          <h2 class="section-heading section-heading--secondary">About Me</h2>
+          <p>I’m a junior front-end developer looking for a new role in an exciting company.
+            I focus on writing accessible HTML, using modern CSS practices and writing clean
+            JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to
+            whatever tools are required. I’m based in London, UK, but I’m happy working remotely
+            and have experience in remote teams. When I’m not coding, you’ll find me outdoors.
+            I love being out in nature whether that’s going for a walk, run or cycling. I’d love
+            you to check out my work.</p>
+          <a href="./html/portfolio.html" class="button button--primary">Go to Portfolio</a>
+        </header>
+      </section>
+    </div>
+    <div class="container">
+      <section class="contact-cta">
+        <h2 class="section-heading section-heading--secondary">Interested in doing a project together?</h2>
+        <div class="separator-line"></div>
+        <a href="./html/contact.html" class="button button--primary">Contact Me</a>
+      </section>
+    </div>
+  </main>
 
-  About Me
-
-  I’m a junior front-end developer looking for a new role in an exciting company.
-  I focus on writing accessible HTML, using modern CSS practices and writing clean
-  JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to
-  whatever tools are required. I’m based in London, UK, but I’m happy working remotely
-  and have experience in remote teams. When I’m not coding, you’ll find me outdoors.
-  I love being out in nature whether that’s going for a walk, run or cycling. I’d love
-  you to check out my work.
-
-  Go to Portfolio
-
-  Interested in doing a project together?
-
-  Contact Me
-
+  <footer class="primary-footer">
+    <div class="container">
+      <div class="flex">
+        <a aria-label="Home page" href="#"><img src="./dist/images/logo.svg" alt="" class="logo logo--light"></a>
+        <nav aria-label="footer" class="navigation primary-footer__navigation">
+          <ul class="navigation__nav-list">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="./html/portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="./html/contact.html" class="nav-link">Contact me</a></li>
+          </ul>
+        </nav>
+        <ul class="socials-flex">
+          <li>
+            <a aria-label="GitHub" href="#" class="social-link"><img src="./dist/images/icons/github.svg" alt=""></a>
+          </li>
+          <li>
+            <a aria-label="Twitter" href="#" class="social-link"><img src="./dist/images/icons/twitter.svg"
+                   alt=""></a>
+          </li>
+          <li>
+            <a aria-label="LinkedIn" href="#" class="social-link"><img src="./dist/images/icons/linkedin.svg"
+                   alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
