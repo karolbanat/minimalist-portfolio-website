@@ -1,0 +1,19 @@
+@use '../abstracts/mixins' as mxn;
+
+.footer-flex {
+	--footer-gap: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--footer-gap);
+	@include mxn.mq(medium) {
+		--footer-gap: 4.8rem;
+		flex-direction: row;
+	}
+}
+
+.socials-flex {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}

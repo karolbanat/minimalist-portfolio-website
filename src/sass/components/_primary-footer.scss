@@ -1,0 +1,23 @@
+@use '../abstracts/mixins' as mxn;
+
+.primary-footer {
+	padding-block: 5.6rem;
+	color: var(--clr-neutral-100);
+	background-color: var(--clr-primary-700);
+	@include mxn.mq(medium) {
+		padding-block: 2.4rem;
+	}
+
+	&__navigation {
+		padding-block-start: 0;
+		margin-block-end: 0;
+	}
+
+	&__link {
+		color: inherit;
+		&:hover,
+		&:focus {
+			color: var(--clr-primary-400);
+		}
+	}
+}
