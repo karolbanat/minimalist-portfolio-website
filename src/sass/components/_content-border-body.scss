@@ -1,0 +1,23 @@
+@use '../abstracts/mixins' as mxn;
+@use '../abstracts/functions' as func;
+
+.content-border-body {
+	$border-clr: func.get-color(primary, 700);
+	--padding-top: 3.2rem;
+	--padding-bottom: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 2.4rem;
+	padding-block-start: var(--padding-top);
+	padding-block-end: var(--padding-bottom);
+	border-block: 1px solid fade-out($border-clr, 0.85);
+	@include mxn.mq(medium) {
+		--padding-top: 4.8rem;
+		--padding-bottom: 4.8rem;
+	}
+	@include mxn.mq(large) {
+		margin-inline: 9.5rem;
+	}
+}

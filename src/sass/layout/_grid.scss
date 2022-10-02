@@ -20,3 +20,18 @@
 		}
 	}
 }
+
+.content-grid {
+	--content-flex-gap: 3.2rem;
+	display: grid;
+	gap: var(--content-flex-gap);
+	@include mxn.mq(medium) {
+		--content-flex-gap: 7rem;
+		grid-auto-flow: column;
+		grid-template-columns: auto 1fr;
+	}
+
+	@include mxn.mq(large) {
+		--content-flex-gap: 3rem;
+	}
+}
