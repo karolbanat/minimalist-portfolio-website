@@ -1,13 +1,14 @@
 @use '../abstracts/mixins' as mxn;
 
 .navigation {
+	--navigation-margin-max: 5.4rem;
 	position: relative;
 	z-index: 9999;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding-block-start: clamp(3.2rem, 5vw, 6.4rem);
-	margin-block-end: clamp(4rem, 6.25vw, 5.4rem);
+	margin-block-end: clamp(4rem, 10vw, var(--navigation-margin-max));
 
 	&__toggle-button {
 		@include mxn.mq(medium) {

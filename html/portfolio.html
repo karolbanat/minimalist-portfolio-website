@@ -17,45 +17,167 @@
 
 <body>
 
-  Home
-  Portfolio
-  Contact Me
+  <div class="container">
+    <nav class="navigation" style="--navigation-margin-max: 9.4rem">
+      <a aria-label="Home page" href="../index.html"><img src="../dist/images/logo.svg" alt="" class="logo"></a>
+      <button aria-label="Toggle menu"
+              aria-controls="primary-nav"
+              aria-expanded="false"
+              class="toggle-button navigation__toggle-button">
+        <img src="../dist/images/icons/hamburger.svg" alt="" class="toggle-button__icon-open">
+        <img src="../dist/images/icons/close.svg" alt="" class="toggle-button__icon-close">
+      </button>
+      <div id="primary-nav" class="navigation__nav">
+        <ul class="navigation__nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="#" class="nav-link active">Portfolio</a></li>
+          <li><a href="./contact.html" class="nav-link">Contact me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-  Manage
+  <main>
+    <div class="container">
+      <section>
+        <h2 class="visually-hidden">My projects</h2>
+        <ul class="projects-grid">
+          <li>
+            <article class="content-grid">
+              <picture class="align-self-center">
+                <source media="(min-width: 1200px)"
+                        srcset="../dist/images/portfolio/desktop/image-portfolio-manage.jpg 1x, ../dist/images/portfolio/desktop/image-portfolio-manage@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                        srcset="../dist/images/portfolio/tablet/image-portfolio-manage.jpg 1x, ../dist/images/portfolio/tablet/image-portfolio-manage@2x.jpg 2x">
+                <source
+                        srcset="../dist/images/portfolio/mobile/image-portfolio-manage.jpg 1x, ../dist/images/portfolio/mobile/image-portfolio-manage@2x.jpg 2x">
+                <img src="../dist/images/portfolio/mobile/image-portfolio-manage.jpg"
+                     alt=""
+                     class="mx-auto">
+              </picture>
+              <header class="content-border-body">
+                <h2 class="section-heading section-heading--secondary">Manage</h2>
+                <p>This project required me to build a fully responsive landing page to the designs provided.
+                  I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity,
+                  such as the testimonial slider.</p>
+                <a href="./projects/manage.html" class="button button--primary">View Project</a>
+              </header>
+            </article>
+          </li>
+          <li>
+            <article class="content-grid" data-reversed>
+              <picture class="align-self-center">
+                <source media="(min-width: 1200px)"
+                        srcset="../dist/images/portfolio/desktop/image-portfolio-bookmark.jpg 1x, ../dist/images/portfolio/desktop/image-portfolio-bookmark@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                        srcset="../dist/images/portfolio/tablet/image-portfolio-bookmark.jpg 1x, ../dist/images/portfolio/tablet/image-portfolio-bookmark@2x.jpg 2x">
+                <source
+                        srcset="../dist/images/portfolio/mobile/image-portfolio-bookmark.jpg 1x, ../dist/images/portfolio/mobile/image-portfolio-bookmark@2x.jpg 2x">
+                <img src="../dist/images/portfolio/mobile/image-portfolio-bookmark.jpg"
+                     alt=""
+                     class="mx-auto">
+              </picture>
+              <header class="content-border-body">
+                <h2 class="section-heading section-heading--secondary">Bookmark</h2>
+                <p>This project required me to build a fully responsive landing page to the designs provided. I
+                  used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such
+                  as the features section.</p>
+                <a href="./projects/bookmark.html" class="button button--primary">View Project</a>
+              </header>
+            </article>
+          </li>
+          <li>
+            <article class="content-grid">
+              <picture class="align-self-center">
+                <source media="(min-width: 1200px)"
+                        srcset="../dist/images/portfolio/desktop/image-portfolio-insure.jpg 1x, ../dist/images/portfolio/desktop/image-portfolio-insure@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                        srcset="../dist/images/portfolio/tablet/image-portfolio-insure.jpg 1x, ../dist/images/portfolio/tablet/image-portfolio-insure@2x.jpg 2x">
+                <source
+                        srcset="../dist/images/portfolio/mobile/image-portfolio-insure.jpg 1x, ../dist/images/portfolio/mobile/image-portfolio-insure@2x.jpg 2x">
+                <img src="../dist/images/portfolio/mobile/image-portfolio-insure.jpg"
+                     alt=""
+                     class="mx-auto">
+              </picture>
+              <header class="content-border-body">
+                <h2 class="section-heading section-heading--secondary">Insure</h2>
+                <p>This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive
+                  landing page. The only JavaScript this project required was to enable the toggling of the
+                  mobile navigation.</p>
+                <a href="./projects/insure.html" class="button button--primary">View Project</a>
+              </header>
+            </article>
+          </li>
+          <li>
+            <article class="content-grid" data-reversed>
+              <picture class="align-self-center">
+                <source media="(min-width: 1200px)"
+                        srcset="../dist/images/portfolio/desktop/image-portfolio-fylo.jpg 1x, ../dist/images/portfolio/desktop/image-portfolio-fylo@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                        srcset="../dist/images/portfolio/tablet/image-portfolio-fylo.jpg 1x, ../dist/images/portfolio/tablet/image-portfolio-fylo@2x.jpg 2x">
+                <source
+                        srcset="../dist/images/portfolio/mobile/image-portfolio-fylo.jpg 1x, ../dist/images/portfolio/mobile/image-portfolio-fylo@2x.jpg 2x">
+                <img src="../dist/images/portfolio/mobile/image-portfolio-fylo.jpg"
+                     alt=""
+                     class="mx-auto">
+              </picture>
+              <header class="content-border-body">
+                <h2 class="section-heading section-heading--secondary">Fylo</h2>
+                <p>This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and
+                  built it so that it was fully-responsive. I took a mobile-first approach and used modern
+                  CSS like Flexbox and Grid for layout purposes.</p>
+                <a href="./projects/fylo.html" class="button button--primary">View Project</a>
+              </header>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </div>
 
-  This project required me to build a fully responsive landing page to the designs provided.
-  I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity,
-  such as the testimonial slider.
+    <div class="container">
+      <section class="contact-cta">
+        <h2 class="section-heading section-heading--secondary contact-cta__heading">Interested in doing a project
+          together?</h2>
+        <div class="separator-line"></div>
+        <a href="./contact.html" class="button button--primary">Contact Me</a>
+      </section>
+    </div>
+  </main>
 
-  View Project
+  <footer class="primary-footer">
+    <div class="container">
+      <div class="footer-flex">
+        <a aria-label="Home page" href="../index.html"><img src="../dist/images/logo.svg" alt=""
+               class="logo logo--light"></a>
+        <nav aria-label="footer" class="navigation primary-footer__navigation">
+          <ul class="navigation__nav-list">
+            <li><a href="../index.html" class="nav-link primary-footer__link">Home</a></li>
+            <li><a href="#" class="nav-link primary-footer__link">Portfolio</a></li>
+            <li><a href="./contact.html" class="nav-link primary-footer__link">Contact me</a></li>
+          </ul>
+        </nav>
+        <ul class="socials-flex | margin-inline-start-auto-md">
+          <li>
+            <a aria-label="GitHub" href="#" class="social-link social-link--light">
+              <img src="../dist/images/icons/github.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a aria-label="Twitter" href="#" class="social-link social-link--light"><img
+                   src="../dist/images/icons/twitter.svg"
+                   alt=""></a>
+          </li>
+          <li>
+            <a aria-label="LinkedIn" href="#" class="social-link social-link--light"><img
+                   src="../dist/images/icons/linkedin.svg"
+                   alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
-  Bookmark
-
-  This project required me to build a fully responsive landing page to the designs provided. I
-  used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such
-  as the features section.
-
-  View Project
-
-  Insure
-
-  This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive
-  landing page. The only JavaScript this project required was to enable the toggling of the
-  mobile navigation.
-
-  View Project
-
-  Fylo
-
-  This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and
-  built it so that it was fully-responsive. I took a mobile-first approach and used modern
-  CSS like Flexbox and Grid for layout purposes.
-
-  View Project
-
-  Interested in doing a project together?
-
-  Contact Me
+  <script src="../dist/js/main.min.js" defer></script>
 
 </body>
 

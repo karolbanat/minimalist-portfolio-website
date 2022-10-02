@@ -29,9 +29,26 @@
 		--content-flex-gap: 7rem;
 		grid-auto-flow: column;
 		grid-template-columns: auto 1fr;
+
+		&[data-reversed] {
+			grid-template-columns: 1fr auto;
+
+			& > *:last-child {
+				grid-column: 1;
+			}
+		}
 	}
 
 	@include mxn.mq(large) {
 		--content-flex-gap: 3rem;
+	}
+}
+
+.projects-grid {
+	--projects-gap: 7.2rem;
+	display: grid;
+	gap: var(--projects-gap);
+	@include mxn.mq(medium) {
+		--projects-gap: 8rem;
 	}
 }
