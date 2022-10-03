@@ -103,3 +103,14 @@
 		grid-area: button;
 	}
 }
+
+.contact-grid {
+	--contact-gap: 2.4rem;
+	display: grid;
+	align-items: start;
+	gap: var(--contact-gap);
+	@include mxn.mq(large) {
+		--contact-gap: 12.5rem;
+		grid-template-columns: 35rem 1fr;
+	}
+}
