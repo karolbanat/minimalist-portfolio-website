@@ -1,4 +1,5 @@
 @use './variables';
+@use './functions' as func;
 
 @mixin mq($key) {
 	$size: map-get(variables.$breakpoints, $key);
@@ -13,5 +14,18 @@
 
 	@media only screen and (max-width: calc(#{$size} - 1px)) {
 		@content;
+	}
+}
+
+@mixin border-content {
+	$border-clr: func.get-color(primary, 700);
+	--padding-top: 3.2rem;
+	--padding-bottom: 5rem;
+	padding-block-start: var(--padding-top);
+	padding-block-end: var(--padding-bottom);
+	border-block: 1px solid fade-out($border-clr, 0.85);
+	@include mq(medium) {
+		--padding-top: 4.8rem;
+		--padding-bottom: 4.8rem;
 	}
 }

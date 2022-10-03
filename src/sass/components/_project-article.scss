@@ -1,0 +1,36 @@
+@use '../abstracts/mixins' as mxn;
+
+.project-article {
+	--project-article-gap: 4rem;
+	display: grid;
+	place-items: start;
+	gap: var(--project-article-gap);
+	grid-template-areas:
+		'header'
+		'body'
+		'footer';
+
+	@include mxn.mq(large) {
+		--project-article-gap: 12.5rem;
+		grid-template-areas:
+			'header body'
+			'footer footer';
+		grid-template-columns: 35rem 1fr;
+	}
+
+	&__header {
+		@include mxn.border-content;
+		grid-area: header;
+	}
+
+	&__body {
+		--flow-spacer: 2.8rem;
+		display: grid;
+		gap: 5.4rem;
+		grid-area: body;
+	}
+
+	&__footer {
+		grid-area: footer;
+	}
+}

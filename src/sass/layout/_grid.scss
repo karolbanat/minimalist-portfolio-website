@@ -1,5 +1,10 @@
 @use '../abstracts/mixins' as mxn;
 
+.grid {
+	display: grid;
+	gap: var(--grid-gap, 1em);
+}
+
 .primary-header-grid {
 	display: grid;
 	gap: 2.4rem;
@@ -50,5 +55,51 @@
 	gap: var(--projects-gap);
 	@include mxn.mq(medium) {
 		--projects-gap: 8rem;
+	}
+}
+
+.project-header-grid {
+	--project-header-gap: 2.4rem;
+	display: grid;
+	place-items: start;
+	gap: var(--project-header-gap);
+	grid-template-areas:
+		'heading'
+		'description'
+		'tools'
+		'button';
+	@include mxn.mq(medium) {
+		--project-header-gap: 1.6rem;
+		grid-template-areas:
+			'heading description'
+			'tools description'
+			'button description';
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include mxn.mq(large) {
+		--project-header-gap: 2.4rem;
+		grid-template-areas:
+			'heading'
+			'description'
+			'tools'
+			'button';
+		grid-template-columns: 1fr;
+	}
+
+	&__heading {
+		grid-area: heading;
+	}
+
+	&__description {
+		grid-area: description;
+	}
+
+	&__tools {
+		grid-area: tools;
+	}
+
+	&__button {
+		grid-area: button;
 	}
 }
