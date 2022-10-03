@@ -17,32 +17,111 @@
 
 <body>
 
-  Home
-  Portfolio
-  Contact Me
+  <div class="container">
+    <nav class="navigation">
+      <a aria-label="Home page" href="#"><img src="../dist/images/logo.svg" alt="" class="logo"></a>
+      <button aria-label="Toggle menu"
+              aria-controls="primary-nav"
+              aria-expanded="false"
+              class="toggle-button navigation__toggle-button">
+        <img src="../dist/images/icons/hamburger.svg" alt="" class="toggle-button__icon-open">
+        <img src="../dist/images/icons/close.svg" alt="" class="toggle-button__icon-close">
+      </button>
+      <div id="primary-nav" class="navigation__nav">
+        <ul class="navigation__nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="./portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="#" class="nav-link active">Contact me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-  Get in Touch
+  <main>
+    <h1 class="visually-hidden">Send me a message</h1>
+    <div class="container">
+      <section class="get-in-touch | contact-grid">
+        <h2 class="section-heading section-heading--secondary">Get in Touch</h2>
+        <div class="flow">
+          <p>I’d love to hear about what you’re working on and how I could help. I’m currently
+            looking for a new role and am open to a wide range of opportunities. My preference
+            would be to find a position in a company in London. But I’m also happy to hear about
+            opportunites that don’t fit that description. I’m a hard-working and positive person
+            who will always approach each task with a sense of purpose and attention to detail.
+            Please do feel free to check out my online profiles below and get in touch using the form.</p>
+          <ul class="socials-flex | margin-inline-start-auto-md">
+            <li>
+              <a aria-label="GitHub" href="#" class="social-link">
+                <img src="../dist/images/icons/github.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a aria-label="Twitter" href="#" class="social-link"><img
+                     src="../dist/images/icons/twitter.svg"
+                     alt=""></a>
+            </li>
+            <li>
+              <a aria-label="LinkedIn" href="#" class="social-link"><img
+                     src="../dist/images/icons/linkedin.svg"
+                     alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contact-grid">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+          <div class="contact-form__input-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Jane Appleseed" required>
+          </div>
+          <div class="contact-form__input-group">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="email@example.com" required>
+          </div>
+          <div class="contact-form__input-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="How can I help?" required></textarea>
+          </div>
+          <button type="submit" class="button button--accent">Send Message</button>
+        </form>
+      </section>
+    </div>
+  </main>
 
-  I’d love to hear about what you’re working on and how I could help. I’m currently
-  looking for a new role and am open to a wide range of opportunities. My preference
-  would be to find a position in a company in London. But I’m also happy to hear about
-  opportunites that don’t fit that description. I’m a hard-working and positive person
-  who will always approach each task with a sense of purpose and attention to detail.
-  Please do feel free to check out my online profiles below and get in touch using the form.
+  <footer class="primary-footer">
+    <div class="container">
+      <div class="footer-flex">
+        <a aria-label="Home page" href="#"><img src="../dist/images/logo.svg" alt="" class="logo logo--light"></a>
+        <nav aria-label="footer" class="navigation primary-footer__navigation">
+          <ul class="navigation__nav-list">
+            <li><a href="../index.html" class="nav-link primary-footer__link">Home</a></li>
+            <li><a href="./portfolio.html" class="nav-link primary-footer__link">Portfolio</a></li>
+            <li><a href="#" class="nav-link primary-footer__link">Contact me</a></li>
+          </ul>
+        </nav>
+        <ul class="socials-flex | margin-inline-start-auto-md">
+          <li>
+            <a aria-label="GitHub" href="#" class="social-link social-link--light">
+              <img src="../dist/images/icons/github.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a aria-label="Twitter" href="#" class="social-link social-link--light"><img
+                   src="../dist/images/icons/twitter.svg"
+                   alt=""></a>
+          </li>
+          <li>
+            <a aria-label="LinkedIn" href="#" class="social-link social-link--light"><img
+                   src="../dist/images/icons/linkedin.svg"
+                   alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
-  Contact Me
-
-  Name
-  Jane Appleseed
-
-  Email Address
-  email@example.com
-
-  Message
-  How can I help?
-
-  Send Message
-
+  <script src="../dist/js/main.min.js" defer></script>
 </body>
 
 </html>
