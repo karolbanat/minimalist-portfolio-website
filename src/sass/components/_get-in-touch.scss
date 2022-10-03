@@ -1,0 +1,7 @@
+@use '../abstracts/mixins' as mxn;
+
+.get-in-touch {
+	@include mxn.border-content;
+	--padding-top: clamp(2.4rem, 4vw, 4.8rem);
+	--padding-bottom: clamp(3.2rem, 4vw, 4.8rem);
+}

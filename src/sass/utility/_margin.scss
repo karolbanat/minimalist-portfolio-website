@@ -17,3 +17,8 @@
 .margin-block-end-preview {
 	margin-block-end: clamp(4rem, -10rem + 20vw, 11.5rem);
 }
+
+.margin-block-contact {
+	margin-block-start: clamp(3.2rem, 4vw, 4.8rem);
+	margin-block-end: clamp(8rem, 12.5vw, 11rem);
+}

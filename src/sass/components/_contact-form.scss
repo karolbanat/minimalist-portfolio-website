@@ -1,0 +1,32 @@
+@use '../abstracts/mixins' as mxn;
+
+.contact-form {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 2.4rem;
+	font-size: var(--fz-200);
+
+	&__input-group {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	&__label {
+		margin-bottom: 0.5em;
+		font-weight: var(--fw-700);
+	}
+
+	&__input {
+		padding-block: 1em;
+		padding-inline: 1.25em;
+		background-color: var(--clr-neutral-300);
+		border: none;
+	}
+
+	& textarea {
+		min-height: 9.6rem;
+		resize: vertical;
+	}
+}
