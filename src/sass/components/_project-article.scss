@@ -3,7 +3,7 @@
 .project-article {
 	--project-article-gap: 4rem;
 	display: grid;
-	place-items: start;
+	align-items: start;
 	gap: var(--project-article-gap);
 	grid-template-areas:
 		'header'
@@ -32,5 +32,7 @@
 
 	&__footer {
 		grid-area: footer;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 	}
 }

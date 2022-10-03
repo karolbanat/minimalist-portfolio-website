@@ -1,0 +1,82 @@
+@use '../../abstracts/mixins' as mxn;
+@use '../../abstracts/functions' as func;
+
+.project-link {
+	$border-clr: func.get-color(primary, 700);
+	$link-border: 1px solid fade-out($border-clr, 0.85);
+	--padding-block: 2.4rem;
+	--text-align: start;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-block: var(--padding-block);
+	text-decoration: none;
+	text-align: var(--text-align);
+	line-height: 1;
+	color: var(--clr-primary-700);
+	border-block: $link-border;
+	cursor: pointer;
+	transition: opacity 0.4s ease;
+	@include mxn.mq(medium) {
+		--padding-block: 3.2rem;
+		--padding-inline: 4rem;
+		position: relative;
+		&::before {
+			position: absolute;
+			top: 50%;
+			translate: 0 -50%;
+		}
+	}
+
+	/* pseudo classes and elements */
+	&::before {
+		content: var(--arrow, '');
+		margin-bottom: 1.6rem;
+	}
+
+	&:not(:last-child) {
+		border-inline-end: $link-border;
+	}
+
+	&:hover,
+	&:focus {
+		opacity: 0.6;
+	}
+
+	/* elements/labels */
+	&__project-name {
+		font-family: var(--ff-accent);
+		font-size: var(--fz-600);
+		font-weight: var(--fw-400);
+		line-height: 1.125;
+	}
+
+	&__label {
+		font-size: var(--fz-400);
+		line-height: 1.875;
+		opacity: 0.5;
+	}
+
+	/* modifiers */
+	&--prev {
+		--arrow: url('../images/icons/arrow-left.svg');
+		--text-align: start;
+		@include mxn.mq(small) {
+			padding-inline-start: var(--padding-inline);
+			&::before {
+				left: 0;
+			}
+		}
+	}
+
+	&--next {
+		--arrow: url('../images/icons/arrow-right.svg');
+		--text-align: end;
+		@include mxn.mq(small) {
+			padding-inline-end: var(--padding-inline);
+			&::before {
+				right: 0;
+			}
+		}
+	}
+}
