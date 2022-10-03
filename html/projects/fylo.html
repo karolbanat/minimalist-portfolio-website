@@ -17,43 +17,155 @@
 
 <body>
 
-  Home
-  Portfolio
-  Contact Me
+  <div class="container">
+    <nav class="navigation" style="--navigation-margin-max: 9.4rem">
+      <a aria-label="Home page" href="../../index.html"><img src="../../dist/images/logo.svg" alt="" class="logo"></a>
+      <button aria-label="Toggle menu"
+              aria-controls="primary-nav"
+              aria-expanded="false"
+              class="toggle-button navigation__toggle-button">
+        <img src="../../dist/images/icons/hamburger.svg" alt="" class="toggle-button__icon-open">
+        <img src="../../dist/images/icons/close.svg" alt="" class="toggle-button__icon-close">
+      </button>
+      <div id="primary-nav" class="navigation__nav">
+        <ul class="navigation__nav-list">
+          <li><a href="../../index.html" class="nav-link">Home</a></li>
+          <li><a href="../portfolio.html" class="nav-link active">Portfolio</a></li>
+          <li><a href="../contact.html" class="nav-link">Contact me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-  Fylo
+  <main>
+    <div class="container">
+      <picture>
+        <source media="(min-width: 992px)"
+                srcset="../../dist/images/detail/desktop/image-fylo-hero.jpg 1x, ../../dist/images/detail/desktop/image-fylo-hero@2x.jpg 2x">
+        <source media="(min-width: 576px)"
+                srcset="../../dist/images/detail/tablet/image-fylo-hero.jpg 1x, ../../dist/images/detail/tablet/image-fylo-hero@2x.jpg 2x">
+        <source
+                srcset="../../dist/images/detail/mobile/image-fylo-hero.jpg 1x, ../../dist/images/detail/mobile/image-fylo-hero@2x.jpg 2x">
+        <img src="../../dist/images/detail/mobile/image-fylo-hero.jpg"
+             alt=""
+             class="mx-auto margin-block-end-preview">
+      </picture>
+    </div>
 
-  This project was built in pure HTML and CSS. I had mobile and desktop designs to
-  work to and built it so that it was fully-responsive. I took a mobile-first approach
-  and used modern CSS like Flexbox and Grid for layout purposes.
+    <div class="container">
+      <article class="project-article">
+        <header class="project-header-grid project-article__header">
+          <h2 class="section-heading section-heading--secondary | project-header-grid__heading">Fylo</h2>
+          <p class="project-header-grid__description">This project was built in pure HTML and CSS. I had mobile and
+            desktop designs to
+            work to and built it so that it was fully-responsive. I took a mobile-first approach
+            and used modern CSS like Flexbox and Grid for layout purposes.</p>
+          <div class="tools | flow project-header-grid__tools">
+            <p class="tools__tool">Interaction Design / Front End Development</p>
+            <p class="tools__tool">HTML / CSS / JS</p>
+          </div>
+          <a href="#" class="button button--primary | project-header-grid__button">Visit Website</a>
+        </header>
+        <section aria-label="Project overview" class="project-article__body">
+          <article class="flow">
+            <h3 class="section-heading section-heading--tertiary">Project Background</h3>
+            <p>This project was a front-end challenge from <a href="https://www.frontendmentor.io/"
+                 class="link">Frontend Mentor</a>. It’s a platform that
+              enables you to practice building websites to a design and project brief. Each challenge
+              includes mobile and desktop designs to show how the website should look at different
+              screen sizes. Creating these projects has helped me refine my workflow and solve
+              real-world coding problems. I’ve learned something new with each project, helping
+              me to improve and adapt my style.</p>
+          </article>
+          <article class="flow">
+            <h3 class="section-heading section-heading--tertiary">Static Previews</h3>
+            <ul class="grid" style="--grid-gap: 3.2rem">
+              <li>
+                <picture>
+                  <source media="(min-width: 992px)"
+                          srcset="../../dist/images/detail/desktop/image-fylo-preview-1.jpg 1x, ../../dist/images/detail/desktop/image-fylo-preview-1@2x.jpg 2x">
+                  <source media="(min-width: 576px)"
+                          srcset="../../dist/images/detail/tablet/image-fylo-preview-1.jpg 1x, ../../dist/images/detail/tablet/image-fylo-preview-1@2x.jpg 2x">
+                  <source
+                          srcset="../../dist/images/detail/mobile/image-fylo-preview-1.jpg 1x, ../../dist/images/detail/mobile/image-fylo-preview-1@2x.jpg 2x">
+                  <img src="../../dist/images/detail/mobile/image-fylo-preview-1.jpg"
+                       alt=""
+                       class="mx-auto">
+                </picture>
+              </li>
+              <li>
+                <picture>
+                  <source media="(min-width: 992px)"
+                          srcset="../../dist/images/detail/desktop/image-fylo-preview-2.jpg 1x, ../../dist/images/detail/desktop/image-fylo-preview-2@2x.jpg 2x">
+                  <source media="(min-width: 576px)"
+                          srcset="../../dist/images/detail/tablet/image-fylo-preview-2.jpg 1x, ../../dist/images/detail/tablet/image-fylo-preview-2@2x.jpg 2x">
+                  <source
+                          srcset="../../dist/images/detail/mobile/image-fylo-preview-2.jpg 1x, ../../dist/images/detail/mobile/image-fylo-preview-2@2x.jpg 2x">
+                  <img src="../../dist/images/detail/mobile/image-fylo-preview-2.jpg"
+                       alt=""
+                       class="mx-auto">
+                </picture>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <footer class="project-article__footer">
+          <a href="./insure.html" class="project-link project-link--prev">
+            <span class="project-link__project-name">Insure</span>
+            <span class="project-link__label">Previous Project</span>
+          </a>
+          <a href="./manage.html" class="project-link project-link--next">
+            <span class="project-link__project-name">Manage</span>
+            <span class="project-link__label">Next Project</span>
+          </a>
+        </footer>
+      </article>
+    </div>
 
-  Interaction Design / Front End Development
+    <div class="container">
+      <section class="contact-cta">
+        <h2 class="section-heading section-heading--secondary contact-cta__heading">Interested in doing a project
+          together?</h2>
+        <div class="separator-line"></div>
+        <a href="../contact.html" class="button button--primary">Contact Me</a>
+      </section>
+    </div>
+  </main>
 
-  HTML / CSS
+  <footer class="primary-footer">
+    <div class="container">
+      <div class="footer-flex">
+        <a aria-label="Home page" href="../../index.html"><img src="../../dist/images/logo.svg" alt=""
+               class="logo logo--light"></a>
+        <nav aria-label="footer" class="navigation primary-footer__navigation">
+          <ul class="navigation__nav-list">
+            <li><a href="../../index.html" class="nav-link primary-footer__link">Home</a></li>
+            <li><a href="../portfolio.html" class="nav-link primary-footer__link">Portfolio</a></li>
+            <li><a href="../contact.html" class="nav-link primary-footer__link">Contact me</a></li>
+          </ul>
+        </nav>
+        <ul class="socials-flex | margin-inline-start-auto-md">
+          <li>
+            <a aria-label="GitHub" href="#" class="social-link social-link--light">
+              <img src="../../dist/images/icons/github.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a aria-label="Twitter" href="#" class="social-link social-link--light"><img
+                   src="../../dist/images/icons/twitter.svg"
+                   alt=""></a>
+          </li>
+          <li>
+            <a aria-label="LinkedIn" href="#" class="social-link social-link--light"><img
+                   src="../../dist/images/icons/linkedin.svg"
+                   alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
-  Visit Website
-
-  Project Background
-
-  This project was a front-end challenge from Frontend Mentor. It’s a platform that
-  enables you to practice building websites to a design and project brief. Each challenge
-  includes mobile and desktop designs to show how the website should look at different
-  screen sizes. Creating these projects has helped me refine my workflow and solve
-  real-world coding problems. I’ve learned something new with each project, helping
-  me to improve and adapt my style.
-
-  Static Previews
-
-  Insure
-  Previous Project
-
-  Manage
-  Next Project
-
-  Interested in doing a project together?
-
-  Contact Me
-
+  <script src="../../dist/js/main.min.js" defer></script>
 </body>
 
 </html>
