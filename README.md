@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution Page](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages Site](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/minimalist-portfolio-website-STm6t6UAO3)
+- Live Site URL: [GitHub Pages Site](https://karolbanat.github.io/minimalist-portfolio-website/)
 
 ## My process
 
@@ -49,8 +49,8 @@ Users should be able to:
 
 ### Continued development
 
-I would like to spend more time on planning with design before starting to code. In this project i spend a lot of time, but I still feel it wasn't enough.
-While coding I had to change my mind a few times, so spending more time on planning would save me some time.
+I would like to spend more time on planning with designs before starting to code. In this project I spent a lot of time on planning, but I still feel it wasn't enough.
+While coding I had to change my mind a few times, so spending more time on planning would have saved me some time.
 I would like to work on naming classes and files too. I think I don't spend enough time on thinking about names.
 
 ## Author
