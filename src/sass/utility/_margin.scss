@@ -13,3 +13,7 @@
 		margin-inline-start: auto;
 	}
 }
+
+.margin-block-end-preview {
+	margin-block-end: clamp(4rem, -10rem + 20vw, 11.5rem);
+}
