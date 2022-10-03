@@ -77,18 +77,22 @@
           <div class="contact-form__input-group">
             <label for="name" class="contact-form__label">Name</label>
             <input type="text" name="name" id="name" placeholder="Jane Appleseed" class="contact-form__input" required>
+            <p class="contact-form__error-msg">test</p>
           </div>
           <div class="contact-form__input-group">
             <label for="email" class="contact-form__label">Email Address</label>
             <input type="email" name="email" id="email" placeholder="email@example.com" class="contact-form__input"
                    required>
+            <p class="contact-form__error-msg"></p>
           </div>
           <div class="contact-form__input-group">
             <label for="message" class="contact-form__label">Message</label>
             <textarea name="message" id="message" placeholder="How can I help?"
                       class="contact-form__input" required></textarea>
+            <p class="contact-form__error-msg"></p>
           </div>
           <button type="submit" class="button button--accent">Send Message</button>
+          <p class="contact-form__confirmation-msg">Message sent</p>
         </form>
       </section>
     </div>
@@ -128,6 +132,7 @@
   </footer>
 
   <script src="../dist/js/main.min.js" defer></script>
+  <script src="../dist/js/form.min.js" defer></script>
 </body>
 
 </html>

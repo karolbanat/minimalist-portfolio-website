@@ -13,6 +13,14 @@
 		width: 100%;
 	}
 
+	&__input-group.error &__error-msg {
+		display: block;
+	}
+
+	&__input-group.error &__input {
+		outline: 1px solid var(--clr-secondary-400);
+	}
+
 	&__label {
 		margin-bottom: 0.5em;
 		font-weight: var(--fw-700);
@@ -23,6 +31,29 @@
 		padding-inline: 1.25em;
 		background-color: var(--clr-neutral-300);
 		border: none;
+
+		&:focus {
+			outline: 1px solid var(--clr-primary-400);
+		}
+	}
+
+	&__error-msg {
+		display: none;
+		font-weight: var(--fw-700);
+		font-size: var(--fz-200);
+		font-style: italic;
+		color: var(--clr-secondary-400);
+	}
+
+	&__confirmation-msg {
+		display: none;
+		font-weight: var(--fw-700);
+		font-size: var(--fz-200);
+		color: var(--clr-primary-400);
+
+		&.visible {
+			display: block;
+		}
 	}
 
 	& textarea {
