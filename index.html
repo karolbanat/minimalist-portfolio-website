@@ -17,12 +17,12 @@
 
 <body>
 
+  <a href="#main-heading" class="skip-link">Skip to content</a>
+
   <div class="container">
     <nav class="navigation">
       <a aria-label="Home page" href="#"><img src="./dist/images/logo.svg" alt="" class="logo"></a>
-      <button aria-label="Toggle menu"
-              aria-controls="primary-nav"
-              aria-expanded="false"
+      <button aria-label="Toggle menu" aria-controls="primary-nav" aria-expanded="false"
               class="toggle-button navigation__toggle-button">
         <img src="./dist/images/icons/hamburger.svg" alt="" class="toggle-button__icon-open">
         <img src="./dist/images/icons/close.svg" alt="" class="toggle-button__icon-close">
@@ -47,11 +47,11 @@
                   srcset="./dist/images/homepage/tablet/image-homepage-hero.jpg 1x, ./dist/images/homepage/tablet/image-homepage-hero@2x.jpg 2x">
           <source
                   srcset="./dist/images/homepage/mobile/image-homepage-hero.jpg 1x, ./dist/images/homepage/mobile/image-homepage-hero@2x.jpg 2x">
-          <img src="./dist/images/homepage/mobile/image-homepage-hero.jpg"
-               alt="Apple computer with project preview">
+          <img src="./dist/images/homepage/mobile/image-homepage-hero.jpg" alt="Apple computer with project preview">
         </picture>
         <div class="primary-header-grid__content primary-header__content">
-          <h1 class="section-heading section-heading--primary">Hey, I’m Alex Spencer and I love building beautiful
+          <h1 id="main-heading" class="section-heading section-heading--primary">Hey, I’m Alex Spencer and I love
+            building beautiful
             websites</h1>
           <a href="#about-me" class="button button--accent button--about"><img src="./dist/images/icons/down-arrows.svg"
                  alt=""> <span>About Me</span></a>
@@ -70,8 +70,7 @@
                   srcset="./dist/images/homepage/tablet/image-homepage-profile.jpg 1x, ./dist/images/homepage/tablet/image-homepage-profile@2x.jpg 2x">
           <source
                   srcset="./dist/images/homepage/mobile/image-homepage-profile.jpg 1x, ./dist/images/homepage/mobile/image-homepage-profile@2x.jpg 2x">
-          <img src="./dist/images/homepage/mobile/image-homepage-profile.jpg"
-               alt="Alex Spencer picture"
+          <img src="./dist/images/homepage/mobile/image-homepage-profile.jpg" alt="Alex Spencer picture"
                class="mx-auto">
         </picture>
         <header class="content-border-body">
@@ -116,13 +115,11 @@
           </li>
           <li>
             <a aria-label="Twitter" href="#" class="social-link social-link--light"><img
-                   src="./dist/images/icons/twitter.svg"
-                   alt=""></a>
+                   src="./dist/images/icons/twitter.svg" alt=""></a>
           </li>
           <li>
             <a aria-label="LinkedIn" href="#" class="social-link social-link--light"><img
-                   src="./dist/images/icons/linkedin.svg"
-                   alt=""></a>
+                   src="./dist/images/icons/linkedin.svg" alt=""></a>
           </li>
         </ul>
       </div>

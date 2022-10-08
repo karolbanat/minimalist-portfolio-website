@@ -17,12 +17,12 @@
 
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
   <div class="container">
     <nav class="navigation" style="--navigation-margin-max: 9.4rem">
       <a aria-label="Home page" href="../index.html"><img src="../dist/images/logo.svg" alt="" class="logo"></a>
-      <button aria-label="Toggle menu"
-              aria-controls="primary-nav"
-              aria-expanded="false"
+      <button aria-label="Toggle menu" aria-controls="primary-nav" aria-expanded="false"
               class="toggle-button navigation__toggle-button">
         <img src="../dist/images/icons/hamburger.svg" alt="" class="toggle-button__icon-open">
         <img src="../dist/images/icons/close.svg" alt="" class="toggle-button__icon-close">
@@ -38,7 +38,7 @@
   </div>
 
   <main>
-    <h1 class="visually-hidden">Send me a message</h1>
+    <h1 id="main-content" class="visually-hidden">Send me a message</h1>
     <div class="container">
       <section class="get-in-touch | contact-grid">
         <h2 class="section-heading section-heading--secondary">Get in Touch</h2>
@@ -56,13 +56,11 @@
               </a>
             </li>
             <li>
-              <a aria-label="Twitter" href="#" class="social-link"><img
-                     src="../dist/images/icons/twitter.svg"
+              <a aria-label="Twitter" href="#" class="social-link"><img src="../dist/images/icons/twitter.svg"
                      alt=""></a>
             </li>
             <li>
-              <a aria-label="LinkedIn" href="#" class="social-link"><img
-                     src="../dist/images/icons/linkedin.svg"
+              <a aria-label="LinkedIn" href="#" class="social-link"><img src="../dist/images/icons/linkedin.svg"
                      alt=""></a>
             </li>
           </ul>
@@ -87,8 +85,8 @@
           </div>
           <div class="contact-form__input-group">
             <label for="message" class="contact-form__label">Message</label>
-            <textarea name="message" id="message" placeholder="How can I help?"
-                      class="contact-form__input" required></textarea>
+            <textarea name="message" id="message" placeholder="How can I help?" class="contact-form__input"
+                      required></textarea>
             <p class="contact-form__error-msg"></p>
           </div>
           <button type="submit" class="button button--accent">Send Message</button>
@@ -118,13 +116,11 @@
           </li>
           <li>
             <a aria-label="Twitter" href="#" class="social-link social-link--light"><img
-                   src="../dist/images/icons/twitter.svg"
-                   alt=""></a>
+                   src="../dist/images/icons/twitter.svg" alt=""></a>
           </li>
           <li>
             <a aria-label="LinkedIn" href="#" class="social-link social-link--light"><img
-                   src="../dist/images/icons/linkedin.svg"
-                   alt=""></a>
+                   src="../dist/images/icons/linkedin.svg" alt=""></a>
           </li>
         </ul>
       </div>
